@@ -20,7 +20,7 @@ const Todos = () => {
     return (
         <>
             {context.todos.map(todo => (
-                <Todo todo={todo} />
+                <Todo todo={todo} key={todo.id} />
             ))}
             <form onSubmit={handleTodoSubmit}>
                 <input
