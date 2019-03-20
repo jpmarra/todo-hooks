@@ -12,8 +12,9 @@ const App = () => {
                 <h1>To Do:</h1>
                 <Todos className="todos" />
                 <iframe
+                    title="fork button"
                     src="https://ghbtns.com/github-btn.html?user=jpmarra&repo=todo-hooks&type=fork&size=large"
-                    frameborder="0"
+                    frameBorder="0"
                     scrolling="0"
                     width="158px"
                     height="30px"
