@@ -11,17 +11,22 @@ const Todo = props => {
         justify-content: space-between;
         align-items: bottom;
         width: 50%;
-        min-width: 700px;
+        min-width: 300px;
+        max-width: 1024px;
         height: 2rem;
         border-bottom: 1px solid black;
         margin: 1rem;
     `;
 
     const TodoText = styled.span`
-        font-style: italic;
+        font-style: ${() => (todo.completed ? 'italic' : 'normal')};
         font-size: 1.5rem;
         color: ${() => (todo.completed ? 'red' : 'black')};
         text-decoration: ${() => (todo.completed ? 'line-through' : 'none')};
+
+        @media only screen and (max-width: 800px) {
+            font-size: 1rem;
+        }
     `;
 
     const Actions = styled.div`

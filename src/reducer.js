@@ -1,7 +1,9 @@
+//* Action Types -----------------
 export const ADD_TODO = 'ADD_TODO';
 export const REMOVE_TODO = 'REMOVE_TODO';
 export const TOGGLE_TODO = 'TOGGLE_TODO';
 
+//* Reducer Helpers -----------------
 const addTodo = (todo, state) => {
     const updatedTodos = [...state];
     updatedTodos.push(todo);
@@ -25,6 +27,7 @@ const toggleTodo = (todoId, state) => {
     return updatedTodos;
 };
 
+//* Reducer function -----------------
 export const todoReducer = (state, action) => {
     switch (action.type) {
         case ADD_TODO:

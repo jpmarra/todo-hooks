@@ -7,6 +7,9 @@ import Todo from './Todo';
 const Todos = () => {
     const context = useContext(TodoContext);
     const [newTodo, setNewTodo] = useState('');
+    const sortedTodos = [...context.todos].sort(todo =>
+        todo.completed ? 1 : -1
+    );
 
     const handleTodoSubmit = e => {
         e.preventDefault();
@@ -20,7 +23,7 @@ const Todos = () => {
 
     return (
         <>
-            {context.todos.map(todo => (
+            {sortedTodos.map(todo => (
                 <Todo todo={todo} key={todo.id} />
             ))}
             <form className="add-form" onSubmit={handleTodoSubmit}>
