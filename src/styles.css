@@ -1,44 +1,43 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+        'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+        'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
 }
 
 .App {
-  font-family: "Dank Mono";
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    font-family: 'Dank Mono';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .todo-input {
-  height: 2rem;
-  width: 25rem;
-  border: 1px solid black;
-  font-family: "Dank Mono";
-  font-size: 1rem;
-  font-weight: bold;
-  margin-right: 1rem;
-  padding-left: 0.5rem;
+    height: 2rem;
+    width: 25rem;
+    border: 1px solid black;
+    font-family: 'Dank Mono';
+    font-size: 1rem;
+    font-weight: bold;
+    margin-right: 1rem;
+    padding-left: 0.5rem;
 }
 
 .todo-button {
-  height: 2rem;
-  background: none;
-  background-color: black;
-  color: white;
-  font-family: "Dank Mono";
-  font-weight: bold;
-  border: 1px solid black;
-  font-size: 1rem;
-
+    height: 2rem;
+    background: none;
+    background-color: black;
+    color: white;
+    font-family: 'Dank Mono';
+    font-weight: bold;
+    border: 1px solid black;
+    font-size: 1rem;
 }

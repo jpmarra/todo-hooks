@@ -1,8 +1,8 @@
-import { createContext } from "react";
+import { createContext } from 'react';
 
-const TodoContext = createContext({ 
-    todos: localStorage.getItem("todos")
-        ? JSON.parse(localStorage.getItem("todos"))
+const TodoContext = createContext({
+    todos: localStorage.getItem('todos')
+        ? JSON.parse(localStorage.getItem('todos'))
         : []
 });
 

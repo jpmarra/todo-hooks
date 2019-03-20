@@ -1,9 +1,9 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-import GlobalState from "./GlobalState";
-import Todos from "./Todos";
-import "./styles.css";
+import GlobalState from './GlobalState';
+import Todos from './Todos';
+import './styles.css';
 
 const App = () => {
     return (
@@ -16,5 +16,5 @@ const App = () => {
     );
 };
 
-const rootElement = document.getElementById("root");
+const rootElement = document.getElementById('root');
 ReactDOM.render(<App />, rootElement);

@@ -1,6 +1,6 @@
-import React, { useContext } from "react";
-import TodoContext from "./TodoContext";
-import styled from "styled-components";
+import React, { useContext } from 'react';
+import TodoContext from './TodoContext';
+import styled from 'styled-components';
 
 const Todo = props => {
     const context = useContext(TodoContext);
@@ -20,8 +20,8 @@ const Todo = props => {
     const TodoText = styled.span`
         font-style: italic;
         font-size: 1.5rem;
-        color: ${() => (todo.completed ? "red" : "black")};
-        text-decoration: ${() => (todo.completed ? "line-through" : "none")};
+        color: ${() => (todo.completed ? 'red' : 'black')};
+        text-decoration: ${() => (todo.completed ? 'line-through' : 'none')};
     `;
 
     const Actions = styled.div`

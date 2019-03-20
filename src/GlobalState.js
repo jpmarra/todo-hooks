@@ -1,5 +1,5 @@
-import React, { useState, useContext, useReducer } from "react";
-import TodoContext from "./TodoContext";
+import React, { useContext, useReducer } from 'react';
+import TodoContext from './TodoContext';
 import { todoReducer, ADD_TODO, REMOVE_TODO, TOGGLE_TODO } from './reducer';
 
 const GlobalState = props => {
