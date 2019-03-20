@@ -20,6 +20,10 @@ code {
     align-items: center;
 }
 
+.add-form {
+    margin: 1rem 0 5rem 0;
+}
+
 .todo-input {
     height: 2rem;
     width: 25rem;

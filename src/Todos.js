@@ -23,7 +23,7 @@ const Todos = () => {
             {context.todos.map(todo => (
                 <Todo todo={todo} key={todo.id} />
             ))}
-            <form onSubmit={handleTodoSubmit}>
+            <form className="add-form" onSubmit={handleTodoSubmit}>
                 <input
                     className="todo-input"
                     placeholder="Add Item"
